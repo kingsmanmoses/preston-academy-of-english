@@ -19,7 +19,7 @@ const ApplyStud = () => {
             Start your English learning in Preston <br /> complete the
             application form below and we will contact you within 24 hours{" "}
             <br /> Click here to look at our{" "}
-            <NavLink className="applyStudy-nav" to="/priceList">
+            <NavLink to="/price-list" className="applyStudy-nav">
               price List
             </NavLink>{" "}
           </p>
