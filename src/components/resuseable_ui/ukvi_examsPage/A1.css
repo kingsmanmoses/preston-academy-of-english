@@ -1,0 +1,296 @@
+.a1generalCont {
+  padding-bottom: 80px;
+}
+.aLearn-moreCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 550px;
+  padding: 0 100px;
+}
+.aLearn-leftHeader {
+  font-size: 2.5rem;
+  flex: 5;
+}
+.aLearn-leftHeader p {
+  font-weight: bolder;
+}
+.aLearn-leftHeader p {
+  color: var(--red-color);
+}
+.aLearn-rightHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 2rem;
+  flex: 4;
+}
+.aLearn-rightHeader div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.aLearn-rightHeader div p {
+  font-weight: 300;
+}
+
+/** For other style below  */
+.aLearn-detailCont {
+  display: flex;
+  gap: 30px;
+  height: 250px;
+  justify-content: center;
+  border-top: 1px solid var(--red-color);
+  border-bottom: 1px solid var(--red-color);
+  background: #eeee;
+  padding-top: 30px;
+}
+.aLearn-detailCont hr {
+  height: 200px;
+}
+.aLearn-detailItem h3 {
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.aLearn-detailItem p {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.aLearn-detailCont a {
+  background: var(--blue-color);
+  padding: 12px;
+  width: max-content;
+  height: max-content;
+  border-radius: 5px;
+}
+.resultCont {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.6rem;
+}
+.aLearn-priceCont {
+  margin-bottom: 25px;
+}
+.aLearn-priceCont h2 {
+  font-size: 1.6rem;
+}
+.aLearn-priceCont div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 1.4rem;
+}
+.aLearn-icon {
+  color: var(--red-color);
+}
+
+/*  */
+.aLearn-expectCont {
+  height: 400px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.aLearn-expectItem {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.each-expectItemCont {
+  width: 250px;
+  gap: 10px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  background: #eee;
+  box-shadow: 1px 1px#111;
+}
+.each-expectItemCont h5 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.each-expectItemCont p {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.expectIcon {
+  font-size: 4rem;
+}
+/*  */
+.otherCourses-learnMoreCont {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.otherCourses-learnMoreCont h2 {
+  font-size: 2rem;
+}
+
+/* ! BREAKPOINTS */
+
+/* * For large devices */
+@media screen and (max-width: 992px) {
+  .aLearn-moreCont {
+    padding: 0 50px;
+  }
+  .aLearn-leftHeader {
+    font-size: 2rem;
+    flex: 5;
+  }
+  .aLearn-rightHeader {
+    font-size: 1.8rem;
+  }
+  .aLearn-rightHeader div {
+    gap: 14px;
+  }
+  .aLearn-detailCont hr {
+    height: 200px;
+  }
+  /*  */
+  .aLearn-detailCont {
+    gap: 20px;
+    height: 250px;
+    padding-left: 20px;
+  }
+  .aLearn-detailItem h3 {
+    font-size: 1.2rem;
+  }
+  .aLearn-detailItem p {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  .resultCont {
+    gap: 10px;
+    font-size: 1.3rem;
+  }
+  .resultCont-icon {
+    display: none;
+  }
+  .resultCont p {
+    width: 200px;
+  }
+  .aLearn-priceCont {
+    margin-bottom: 25px;
+  }
+  .aLearn-priceCont h2 {
+    font-size: 1.3rem;
+  }
+  .aLearn-priceCont div {
+    font-size: 1rem;
+  }
+  /*  */
+  .aLearn-expectCont {
+    height: max-content;
+    padding: 60px 0;
+  }
+  .aLearn-expectItem {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .each-expectItemCont {
+    width: 210px;
+    gap: 10px;
+    height: 210px;
+  }
+}
+
+/* * For medium device */
+@media screen and (max-width: 576px) {
+  .aLearn-moreCont {
+    flex-direction: column;
+    align-items: start;
+    padding: 30px 50px;
+  }
+  .aLearn-detailCont {
+    flex-direction: column;
+    height: max-content;
+    justify-content: center;
+    padding: 40px;
+  }
+  .aLearn-detailCont hr {
+    height: 0;
+    width: 340px;
+  }
+  .aLearn-expectItem {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .each-expectItemCont {
+    width: 180px;
+    gap: 10px;
+    height: 180px;
+  }
+  .each-expectItemCont h5 {
+    font-size: 1rem;
+  }
+  .each-expectItemCont p {
+    font-size: 1.1rem;
+  }
+  .expectIcon {
+    font-size: 3rem;
+  }
+  .otherCourses-learnMoreCont h2 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+}
+
+/* * For small devices */
+@media screen and (max-width: 390px) {
+  .aLearn-expectItem {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .aLearn-detailCont hr {
+    height: 0;
+    width: 310px;
+  }
+  .each-expectItemCont {
+    width: 150px;
+    gap: 10px;
+    height: 150px;
+    text-align: center;
+  }
+  .each-expectItemCont h5 {
+    font-size: 0.8rem;
+  }
+  .each-expectItemCont p {
+    font-size: 1.1rem;
+  }
+  .expectIcon {
+    font-size: 2.7rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .aLearn-expectItem {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .aLearn-detailCont hr {
+    height: 0;
+    width: 250px;
+  }
+  .each-expectItemCont {
+    width: 135px;
+    gap: 10px;
+    height: 135px;
+    text-align: center;
+  }
+  .each-expectItemCont h5 {
+    font-size: 0.8rem;
+  }
+  .each-expectItemCont p {
+    font-size: 1rem;
+  }
+  .expectIcon {
+    font-size: 2.1rem;
+  }
+}

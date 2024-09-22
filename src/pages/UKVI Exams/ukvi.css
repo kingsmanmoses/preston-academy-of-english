@@ -1,0 +1,138 @@
+.ukvi-generalCont {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 60px;
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
+.ukvi-testCont {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 30px 0;
+  width: 100%;
+}
+.each-testCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 420px;
+  text-align: center;
+  height: max-content;
+  border: 1px solid #000;
+  padding: 20px 30px;
+  border-radius: 5px;
+}
+.each-testCont h3 {
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+.each-testCont p {
+  font-size: 1.2rem;
+}
+.priceCont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  font-size: 1.2rem;
+}
+.priceCont h4 {
+  font-weight: 400;
+}
+.priceCont p {
+  font-weight: bolder;
+}
+.test-btnCont {
+  display: inline-flex;
+  gap: 30px;
+}
+.red-testBtn {
+  text-align: center;
+  background: var(--red-color);
+  padding: 10px 13px;
+  border-radius: 5px;
+}
+.blue-testBtn {
+  text-align: center;
+  background: var(--blue-color);
+  padding: 10px 13px;
+  border-radius: 5px;
+}
+.ukvi-faqCont {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+.ukvi-faqCont > h2 {
+  font-size: 2rem;
+  align-self: self-start;
+  padding-left: 100px;
+}
+
+/* ! BREAKPOINTS */
+
+/* * For large devices */
+@media screen and (max-width: 992px) {
+  .ukvi-testCont {
+    flex-wrap: wrap;
+  }
+  .ukvi-generalCont {
+    padding-top: 40px;
+  }
+  .ukvi-faqCont > h2 {
+    padding-left: 50px;
+  }
+}
+
+/* * For medium device */
+@media screen and (max-width: 576px) {
+  .ukvi-faqCont > h2 {
+    padding-left: 25px;
+    font-size: 1.7rem;
+  }
+  .each-testCont {
+    width: 380px;
+  }
+}
+
+/* * For small devices */
+@media screen and (max-width: 390px) {
+  .each-testCont {
+    width: 360px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .each-testCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 300px;
+    text-align: center;
+    height: 300px;
+    border: 1px solid #000;
+    padding: 20px 30px;
+    border-radius: 5px;
+  }
+  .ukvi-faqCont > h2 {
+    font-size: 1.5rem;
+  }
+  .each-testCont {
+    width: 310px;
+    height: max-content;
+    padding: 40px 20px;
+  }
+  .priceCont {
+    gap: 70px;
+  }
+}

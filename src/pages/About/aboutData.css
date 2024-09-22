@@ -1,0 +1,133 @@
+.aboutData-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.aboutData-cont > p {
+  font-size: 1.2rem;
+}
+.data-detailCont {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.data-detailCont > P {
+  font-size: 1.2rem;
+}
+
+.data-detailListCont {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 1.2rem;
+}
+
+.data-detailListCont > ul {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 20px;
+}
+.data-detailListCont ul li {
+  list-style: disc;
+}
+/* //! Style for the inspection and accreditation */
+.aboutData-cont ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 30px;
+}
+.aboutData-cont ul li {
+  list-style-type: disc;
+}
+.data-detailCont .num-cont .num-list {
+  list-style-type: decimal;
+}
+.aboutData-cont a {
+  color: var(--red-color);
+  text-decoration: underline;
+}
+/* //! For the meet the team style */
+.team-cont {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  background: #fff;
+  padding: 20px 0;
+}
+.team-cont > img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+.team-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.team-details p:first-of-type {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+/*! BREAKPOINTS */
+
+/** For large devices */
+@media screen and (max-width: 992px) {
+  .aboutData-cont p {
+    font-size: 1rem;
+  }
+  .data-detailCont P {
+    font-size: 1rem;
+  }
+  .data-detailCont h2 {
+    font-size: 1.2rem;
+  }
+  .data-detailListCont h2 {
+    font-size: 1.3rem;
+  }
+  .data-detailListCont ul li {
+    font-size: 1rem;
+  }
+  .data-detailCont ul li {
+    font-size: 1rem;
+  }
+  /* //! Style for the inspection and accreditation */
+  .aboutData-cont ul li {
+    font-size: 1rem;
+  }
+  /* //! For the meet the team style */
+  .team-details p:first-of-type {
+    font-size: 1.1rem;
+  }
+}
+
+/** For medium device */
+@media screen and (max-width: 576px) {
+  .aboutData-cont p {
+    font-size: 0.9rem;
+  }
+  .data-detailCont P {
+    font-size: 1rem;
+  }
+  .data-detailCont h2 {
+    font-size: 1.2rem;
+  }
+  .data-detailListCont h2 {
+    font-size: 1.3rem;
+  }
+  .data-detailListCont ul li {
+    font-size: 1rem;
+  }
+  .data-detailCont ul li {
+    font-size: 1rem;
+  }
+}
+
+/** For small devices */
+@media screen and (max-width: 390px) {
+}
+@media screen and (max-width: 320px) {
+}

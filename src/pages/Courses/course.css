@@ -1,0 +1,131 @@
+.course-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+.course-header {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  font-weight: 400;
+}
+.course-detailCont {
+  width: 83%;
+  padding: 0 40px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.course-para {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.course-listItemBox {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.itemBox {
+  padding-left: 20px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.item {
+  list-style: disc;
+  font-size: 1.2rem;
+}
+.other-para {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.other-courseBox {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)),
+    url("../../assets/img/each-course.jpg");
+  width: 300px;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+.other-courseCont {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/*! BREAKPOINTS */
+
+/** For large devices */
+@media screen and (max-width: 992px) {
+  .course-cont {
+    padding-bottom: 140px;
+    padding-top: 40px;
+  }
+  .course-detailCont {
+    width: 88%;
+  }
+  .other-courseBox {
+    width: 210px;
+    height: 210px;
+    font-size: 0.9rem;
+  }
+}
+
+/** For medium device */
+@media screen and (max-width: 576px) {
+  .course-header {
+    font-size: 1.8rem;
+  }
+  .course-detailCont {
+    width: 100%;
+  }
+  .course-para,
+  .item {
+    font-size: 1rem;
+  }
+  .other-para {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .other-courseCont {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .other-courseBox {
+    width: 150px;
+    height: 150px;
+    padding: 0 10px;
+  }
+}
+
+/** For small devices */
+@media screen and (max-width: 330px) {
+  .course-header {
+    font-size: 1.6rem;
+  }
+  .course-detailCont {
+    width: 100%;
+  }
+  .course-para,
+  .item,
+  .other-para {
+    font-size: 1rem;
+  }
+  .other-courseCont {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .other-courseBox {
+    width: 130px;
+    height: 130px;
+    padding: 0 10px;
+  }
+}

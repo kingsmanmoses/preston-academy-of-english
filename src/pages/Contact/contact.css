@@ -1,0 +1,202 @@
+.contact-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding-top: 120px;
+}
+.contact-cont > h2 {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  font-weight: 400;
+  font-size: 2rem;
+}
+.contact-detailCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  background: #e9edee;
+  padding-bottom: 90px;
+  padding-top: 40px;
+}
+.contact-detailCont > h2 {
+  font-size: 3rem;
+  margin-bottom: 70px;
+}
+.contact-detailCont > h2 span {
+  color: var(--red-color);
+}
+.contact-details {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact-line {
+  border: 1px solid #000;
+}
+.contact-leftDetailCont {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.each-leftDetail {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.each-leftDetail h3 {
+  font-size: 1.3rem;
+}
+.each-leftDetail p {
+  font-size: 1.2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* //! For the contact form */
+.contact-formCont {
+  width: 600px;
+  height: max-content;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 50px;
+  display: flex;
+  gap: 20px;
+  background: #fff;
+}
+.contact-formDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.input-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.input-generalCont {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.input {
+  width: 220px;
+  height: 40px;
+  padding-left: 10px;
+}
+.textarea {
+  padding: 10px;
+  height: 11rem;
+  resize: none;
+  font-size: 1rem;
+}
+.input::placeholder {
+  font-weight: bold;
+}
+.contactForm-btn {
+  text-align: center;
+  padding: 10px 0;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  background: var(--blue-color);
+  color: #fff;
+  cursor: pointer;
+}
+/* ! BREAKPOINTS */
+
+/* * For large devices */
+@media screen and (max-width: 992px) {
+  .contact-cont {
+    padding-top: 40px;
+  }
+  .contact-detailCont > h2 {
+    font-size: 2rem;
+  }
+  .contact-details {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .contact-formCont {
+    width: 520px;
+  }
+}
+
+/* * For medium device */
+@media screen and (max-width: 576px) {
+  .contact-cont > h2 {
+    font-size: 1.5rem;
+  }
+  .each-leftDetail h3 {
+    font-size: 1.2rem;
+  }
+  .contact-leftDetailCont {
+    padding: 0 40px;
+  }
+  .contact-detailCont > h2 {
+    margin-bottom: 40px;
+  }
+  /* //! For the contact form */
+  .contact-formCont {
+    width: max-content;
+    padding: 20px 30px;
+  }
+  .input-generalCont {
+    display: flex;
+    flex-direction: column;
+  }
+  .input {
+    width: 320px;
+    height: 40px;
+    padding-left: 10px;
+  }
+}
+
+/* * For small devices */
+@media screen and (max-width: 390px) {
+  .contact-cont > h2 {
+    font-size: 1.3rem;
+  }
+  /* //! For the contact form */
+  .contact-formCont {
+    width: max-content;
+    padding: 20px 20px;
+  }
+  .input-generalCont {
+    display: flex;
+    flex-direction: column;
+  }
+  .input {
+    width: 320px;
+    height: 40px;
+    padding-left: 10px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .each-leftDetail h3 {
+    font-size: 1rem;
+  }
+  .each-leftDetail p {
+    font-size: 0.9rem;
+  }
+  /* //! For the contact form */
+  .contact-formCont {
+    width: max-content;
+    padding: 20px 8px;
+  }
+  .input-generalCont {
+    display: flex;
+    flex-direction: column;
+  }
+  .input {
+    width: 290px;
+    height: 40px;
+    padding-left: 10px;
+  }
+}

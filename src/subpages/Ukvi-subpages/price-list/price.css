@@ -1,0 +1,20 @@
+.price-cont {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  padding-top: 110px;
+  padding-bottom: 80px;
+  gap: 50px;
+}
+
+.coursePrice-btn {
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: var(--blue-color);
+  text-align: center;
+}

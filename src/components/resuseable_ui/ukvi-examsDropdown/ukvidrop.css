@@ -1,0 +1,53 @@
+/*! For the dropDown Menu  */
+.drop-cont {
+  display: flex;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  left: -700px;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  background: #000;
+  width: 2000px;
+  height: 400px;
+  padding: 0 50px;
+}
+/* .drop-list {
+    width: 50%;
+  } */
+.drop-listCont {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1.5rem;
+}
+
+.drop-imgCont {
+  padding: 50px;
+}
+.drop-img {
+  width: 400px;
+  object-fit: cover;
+}
+.drop-menu:hover {
+  color: var(--red-color);
+}
+
+/*! BreakPoints */
+/* @media screen and (max-width: 1400px) {
+    .drop-cont {
+      display: flex;
+      position: absolute;
+      top: 80px;
+      right: 0%;
+      left: 0%;
+      justify-content: center;
+      align-items: center;
+      gap: 80px;
+      background: #000;
+      width: 1000px;
+      height: 400px;
+      padding: 0 50px;
+    }
+  } */

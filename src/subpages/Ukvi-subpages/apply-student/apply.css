@@ -1,0 +1,38 @@
+.applyStudCont {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  padding-top: 110px;
+  padding-bottom: 80px;
+}
+.applyStud-header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+.applyStud-header h2 {
+  font-size: 2.5rem;
+}
+.applyStud-header p {
+  font-size: 1.2rem;
+}
+.applyStudy-nav {
+  color: var(--red-color);
+  text-decoration: underline;
+}
+
+/* ! BREAKPOINTS */
+
+/* * For medium device */
+@media screen and (max-width: 576px) {
+  .applyStud-header h2 {
+    font-size: 2rem;
+  }
+}
+
+/* * For small devices */
+@media screen and (max-width: 390px) {
+}

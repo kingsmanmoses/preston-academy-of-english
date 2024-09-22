@@ -1,0 +1,233 @@
+.general-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+.general-header {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  font-weight: 400;
+}
+
+.general-detailCont {
+  width: 83%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 40px;
+}
+.general-para {
+  margin-top: 40px;
+}
+
+.general-para,
+.generalList-header {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.generalList-header > span {
+  color: var(--red-color);
+}
+.general-list {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.general-list a {
+  color: var(--red-color);
+  text-decoration: underline;
+}
+.general-listBox {
+  display: inline-flex;
+  flex-direction: column;
+  padding-left: 20px;
+  gap: 10px;
+}
+.general-listText {
+  list-style: disc;
+  font-size: 1.1rem;
+}
+.generalOtherCourse-header {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+.generalOther-courseCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+.generalOther-boxCont {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.generalOther-courseBox {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)),
+    url("../../../assets/img/each-course.jpg");
+  width: 300px;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+.all-courseBtn {
+  background: var(--red-color);
+  padding: 12px;
+  width: max-content;
+  height: max-content;
+  border-radius: 5px;
+  align-self: center;
+}
+
+/* //! For the English + Preparation Course Component style*/
+.englishPrep-DetailBox {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  gap: 20px;
+}
+.englishPrep-boxDetail {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* //! Fro the UKVI Component style */
+.ukviTest-TestImpo {
+  color: var(--red-color);
+  font-weight: bold;
+}
+/* //! To add table to the all course page components */
+.general-tableCont {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  height: max-content;
+  width: 100%;
+  margin: 20px 0;
+}
+.general-tableCont > h1 {
+  background-color: var(--blue-color);
+  color: #fff;
+  font-size: 1.6rem;
+  padding-left: 10px;
+  padding: 20px 10px;
+}
+.general-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9rem;
+  min-width: 400px;
+}
+.general-table td {
+  padding: 12px 15px;
+}
+.general-table td:first-of-type {
+  font-weight: bold;
+}
+.general-table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+.general-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+.general-table tbody tr:last-of-type {
+  border-bottom: 2px solid var(--blue-color);
+}
+
+/* //! For the one of one component style */
+.notice-red {
+  color: var(--red-color);
+}
+
+/*! BREAKPOINTS */
+
+/** For large devices */
+@media screen and (max-width: 992px) {
+  .general-cont {
+    padding-bottom: 140px;
+    padding-top: 40px;
+  }
+  .general-detailCont {
+    width: 88%;
+  }
+  .generalOther-courseBox {
+    width: 210px;
+    height: 210px;
+    font-size: 0.9rem;
+  }
+}
+
+/** For medium device */
+@media screen and (max-width: 576px) {
+  .englishPrep-DetailBox {
+    margin-top: 30px;
+  }
+  .general-header {
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 45px;
+  }
+  .general-detailCont {
+    width: 100%;
+  }
+  .general-para {
+    font-size: 1rem;
+  }
+  .generalOtherCourse-header {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .generalOther-boxCont {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .generalOther-courseBox {
+    width: 150px;
+    height: 150px;
+    padding: 0 10px;
+  }
+  .general-tableCont {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .general-table {
+    min-width: 100%;
+  }
+}
+
+/** For small devices */
+@media screen and (max-width: 390px) {
+  .general-header {
+    font-size: 1.3rem;
+  }
+  .general-tableCont {
+    margin-bottom: 20px;
+  }
+
+  .generalOther-courseBox {
+    width: 130px;
+    height: 130px;
+    padding: 0 10px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .general-tableCont {
+    margin-bottom: 30px;
+  }
+  .general-table {
+    font-size: 0.8rem;
+  }
+}

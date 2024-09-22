@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+.aboutPreston-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  gap: 50px;
+}
+
+.preston-mainDetailCont {
+  display: flex;
+  flex-direction: column;
+}
+.preston-detailCont {
+  display: flex;
+  align-items: center;
+  background: #e9edee;
+}
+.preston-detailCont:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+.pres-imgContDetail {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pres-imgContDetail img {
+  width: 100%;
+  height: 550px;
+  object-position: center;
+  object-fit: cover;
+}
+.pres-imgContDetail p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.pres-txtDetail {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.pres-txtDetail div {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  text-align: center;
+}
+.pres-txtDetail div > h2 {
+  font-size: 2.6rem;
+  font-family: "Quicksand", sans-serif;
+}
+.pres-txtDetail div > p {
+  font-size: 1.3rem;
+}
+.pres-txtDetail div > a {
+  padding: 15px 30px;
+  background: var(--red-color);
+  border-radius: 5px;
+}
+
+/* ! BREAKPOINTS */
+
+/* * For large devices */
+@media screen and (max-width: 992px) {
+  .aboutPreston-cont {
+    padding-top: 0;
+  }
+  .preston-detailCont {
+    flex-direction: column;
+  }
+  .preston-detailCont:nth-of-type(even) {
+    flex-direction: column;
+  }
+  .pres-imgContDetail {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .pres-imgContDetail img {
+    width: 100%;
+    height: 400px;
+    object-position: center;
+    object-fit: cover;
+  }
+  .pres-txtDetail {
+    width: 100%;
+  }
+  .pres-txtDetail div {
+    width: 80%;
+    padding: 50px 0;
+  }
+  .pres-txtDetail div > p {
+    font-size: 1.3rem;
+  }
+}
+
+/* * For medium device */
+@media screen and (max-width: 576px) {
+  .pres-txtDetail div {
+    width: 90%;
+    padding: 50px 0;
+  }
+  .pres-txtDetail div > p {
+    font-size: 1rem;
+  }
+  .pres-txtDetail div > h2 {
+    font-size: 2rem;
+  }
+}
+
+/* * For small devices */
+@media screen and (max-width: 390px) {
+}
+@media screen and (max-width: 320px) {
+}

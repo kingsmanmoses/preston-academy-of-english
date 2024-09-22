@@ -1,0 +1,255 @@
+.nav-cont {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  background-color: var(--nav-bgColor);
+  z-index: 999;
+}
+/** header style for specifically home page */
+.home-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  background-color: transparent;
+  z-index: 999;
+}
+.scroll-header {
+  background-color: #1e1e1e;
+  box-shadow: 2px 2px 4px -2px #fff;
+}
+.logo-cont {
+  display: flex;
+  align-items: center;
+  width: 6ch;
+  height: 60px;
+}
+.logo {
+  width: 100%;
+}
+.nav-menu {
+  display: flex;
+  gap: 20px;
+  position: relative;
+}
+.dropdown {
+  display: flex;
+  gap: 4px;
+}
+
+.course-mobile {
+  display: none;
+  color: #fff;
+}
+.menu-name {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  height: 80px;
+}
+.drop-icon {
+  font-size: 1.2rem;
+  align-self: center;
+  font-weight: lighter;
+}
+
+.menu-btn {
+  background: #019cdf;
+  padding: 12px;
+  width: max-content;
+  height: max-content;
+  border-radius: 5px;
+}
+/** For the toggle and close and also Icon */
+.nav-toggle,
+.nav-close,
+.nav-icons {
+  display: none;
+}
+
+/*! BREAKPOINTS */
+
+/** For large devices */
+@media screen and (max-width: 992px) {
+  .nav-cont {
+    top: initial;
+    bottom: 0;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: var(--nav-bgColor);
+  }
+  .home-nav {
+    top: initial;
+    bottom: 0;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: var(--nav-bgColor);
+  }
+  .nav-menu {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    padding: 2rem 1.5rem 4rem;
+    background: var(--nav-bgColor);
+    box-shadow: 0 -1px 4px rgba(255, 255, 255, 0.7);
+    border-radius: 1.5rem 1.5rem 0 0;
+    transition: 0.3s;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  .show-menu {
+    bottom: 0%;
+  }
+
+  .nav-toggle {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+  }
+  .nav-toggle,
+  .nav-close,
+  .nav-icons {
+    display: block;
+  }
+
+  .nav-icons {
+    font-size: 1.2rem;
+  }
+  .nav-close {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+  .course {
+    display: none;
+  }
+  .course-mobile {
+    display: block;
+  }
+  .menu-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    /* justify-content: center; */
+  }
+  .menu-name:hover {
+    color: var(--red-color);
+  }
+  .menu-para {
+    text-align: center;
+  }
+}
+
+/** For medium device */
+@media screen and (max-width: 768px) {
+  .nav-cont {
+    top: initial;
+    bottom: 0;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: var(--nav-bgColor);
+  }
+  .home-nav {
+    top: initial;
+    bottom: 0;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: var(--nav-bgColor);
+  }
+  .nav-menu {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    padding: 2rem 1.5rem 4rem;
+    background: var(--nav-bgColor);
+    box-shadow: 0 -1px 4px rgba(255, 255, 255, 0.7);
+    border-radius: 1.5rem 1.5rem 0 0;
+    transition: 0.3s;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  .show-menu {
+    bottom: 0%;
+  }
+
+  .nav-toggle {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+  }
+  .nav-toggle,
+  .nav-close,
+  .nav-icons {
+    display: block;
+  }
+
+  .nav-icons {
+    font-size: 1.2rem;
+  }
+  .nav-close {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+  .course {
+    display: none;
+  }
+  .course-mobile {
+    display: block;
+  }
+  .menu-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    /* justify-content: center; */
+  }
+  .menu-name:hover {
+    color: var(--red-color);
+  }
+  .menu-para {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 576px) {
+}
+
+/** For small devices */
+@media screen and (max-width: 350px) {
+}
