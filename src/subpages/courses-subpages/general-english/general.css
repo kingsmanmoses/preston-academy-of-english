@@ -18,6 +18,7 @@
   gap: 20px;
   padding: 0 40px;
 }
+
 .general-para {
   margin-top: 40px;
 }
@@ -145,6 +146,11 @@
 .general-table tbody tr:last-of-type {
   border-bottom: 2px solid var(--blue-color);
 }
+.general-btnCont {
+  display: flex;
+  gap: 10px;
+  align-self: center;
+}
 
 /* //! For the one of one component style */
 .notice-red {
@@ -205,6 +211,12 @@
   }
   .general-table {
     min-width: 100%;
+  }
+  .general-btnCont {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-self: center;
   }
 }
 

@@ -3,6 +3,8 @@ import "./general.css";
 import { NavLink } from "react-router-dom";
 import Header from "../../../components/header/Header";
 import Footer from "../../../components/footer/Footer";
+import ProgressionChart from "../../../assets/img/Student Progression chart.png";
+import CourseDescription from "../../../assets/files/Course Descriptor for Students A1 to C1.pdf";
 
 const GeneralEnglish = () => {
   useEffect(() => {
@@ -131,9 +133,17 @@ const GeneralEnglish = () => {
             </p>
           </div>
 
-          <NavLink to="/apply-now" className="all-courseBtn">
-            Book Now
-          </NavLink>
+          <div className="general-btnCont">
+            <NavLink to="/apply-now" className="all-courseBtn">
+              Book Now
+            </NavLink>
+            <a className="all-courseBtn" download href={ProgressionChart}>
+              Download the progression chart
+            </a>
+            <a className="all-courseBtn" download href={CourseDescription}>
+              Download course descriptor
+            </a>
+          </div>
 
           <div className="generalOther-courseCont">
             <h4 className="generalOtherCourse-header">
