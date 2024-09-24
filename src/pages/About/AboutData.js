@@ -1,24 +1,27 @@
 import "./aboutData.css";
-import profile from "../../assets/img/commentProfile.jpg";
+import daniel from "../../assets/img/daniel.png";
+import Abdullah from "../../assets/img/Abdullah.png";
+import Andrew from "../../assets/img/andrew.png";
+import Ayesha from "../../assets/img/Ayesha.jpg";
 
 const teamData = [
   {
-    img: profile,
+    img: Abdullah,
     teamTitle: "Principal",
     teamName: "Abdullah Nakhuda",
   },
   {
-    img: profile,
+    img: daniel,
     teamTitle: "Enrolment Officer",
     teamName: "Daniel Whittle ",
   },
   {
-    img: profile,
+    img: Andrew,
     teamTitle: "Academic Manager",
     teamName: "Andrew Hogg",
   },
   {
-    img: profile,
+    img: Ayesha,
     teamTitle: "Welfare and Safegaurding",
     teamName: "Ayesha Nakhuda",
   },

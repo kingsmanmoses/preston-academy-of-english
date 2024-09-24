@@ -124,6 +124,15 @@
   .data-detailCont ul li {
     font-size: 1rem;
   }
+  .team-cont > img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  .team-details p:first-of-type {
+    font-weight: bold;
+    font-size: 1rem;
+  }
 }
 
 /** For small devices */
