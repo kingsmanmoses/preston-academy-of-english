@@ -7,6 +7,10 @@
   padding-top: 110px;
   padding-bottom: 80px;
   gap: 50px;
+  position: relative;
+  padding-bottom: 500px;
+  /* height: 0; */
+  max-width: 100%;
 }
 
 .coursePrice-btn {
@@ -17,4 +21,12 @@
   color: #fff;
   background-color: var(--blue-color);
   text-align: center;
+}
+
+.iframe {
+  position: absolute;
+  top: 100px;
+  border: none;
+  width: 100%;
+  height: 100%;
 }

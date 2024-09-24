@@ -9,16 +9,23 @@ const PriceList = () => {
     <>
       <Header />
       <div className="price-cont">
-        <h1 className="general-header">Price List</h1>
-
-        <a
+        {/* <a
           className="coursePrice-btn"
           target="_blank"
           rel="noreferrer"
           href="//www.coursepricer.com/coursepricer/?school_id=1508"
         >
           Get a Price
-        </a>
+        </a> */}
+        <iframe
+          className="iframe"
+          src="//www.coursepricer.com/coursepricer/?school_id=1508"
+          title="course-pricer"
+          allowFullScreen
+        >
+          Get a price
+        </iframe>
+        r
       </div>
       <Footer />
     </>
