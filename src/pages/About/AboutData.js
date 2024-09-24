@@ -198,8 +198,15 @@ export const AboutData = [
             </a>
           </li>
           <li>
-            Preston Academy of English is an EnglishUK member and an exam
-            partner for{" "}
+            Preston Academy of English is an{" "}
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.englishuk.com/en/course-finder/course-finder-results?id=4120"
+            >
+              EnglishUK member
+            </a>{" "}
+            and an exam partner for{" "}
             <a
               target="_blank"
               rel="noreferrer"
