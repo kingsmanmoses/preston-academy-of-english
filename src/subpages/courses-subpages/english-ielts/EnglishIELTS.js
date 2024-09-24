@@ -63,7 +63,7 @@ const EnglishIELTS = () => {
             <ul className="general-listBox">
               <li className="general-listText">B2 CEFR (Upper Intermediate)</li>
               <li className="general-listText"> B1-B2 CEFR (Intermediate)</li>
-              <li className="general-listText">c1 CEFR (Advanced)</li>
+              <li className="general-listText">C1 CEFR (Advanced)</li>
             </ul>
           </div>
           {/* //! For the table */}
@@ -103,6 +103,16 @@ const EnglishIELTS = () => {
                 href="https://www.gov.uk/bank-holidays"
               >
                 ( please click here for UK bank holidays).
+              </a>
+            </p>
+            <p>
+              <a
+                href="https://takeielts.britishcouncil.org/uk"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {" "}
+                Please click here for the IELTS exam price and locations.
               </a>
             </p>
             <p>

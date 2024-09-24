@@ -188,7 +188,11 @@ export const AboutData = [
             Preston Academy of English is accredited by the British Council for
             teaching English in the UK. The report for British council can be
             found{" "}
-            <a href="https://www.englishuk.com/en/course-finder/course-finder-results?id=4120">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.britishcouncil.org/sites/default/files/preston_aofe_full_2019_.pdf"
+            >
               {" "}
               here.
             </a>
@@ -196,7 +200,11 @@ export const AboutData = [
           <li>
             Preston Academy of English is an EnglishUK member and an exam
             partner for{" "}
-            <a href="https://www.languagecert.org/en/exam-types/test-centre-exams/europe/united-kingdom/preston-academy-of-english-1117679">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.languagecert.org/en/exam-types/test-centre-exams/europe/united-kingdom/preston-academy-of-english-1117679"
+            >
               LanguageCert.
             </a>{" "}
           </li>
@@ -423,10 +431,17 @@ export const AboutData = [
         <div className="data-detailCont">
           <h2>Academy Holidays</h2>
           <p>
-            PAE is closed on all UK public holidays. There is no reduction for
-            course tuition fees on these days. PAE is closed over the Christmas
-            and New Year period (see website for dates). Tuition fees are not
-            payable for this period.
+            PAE is closed on all UK public holidays. Enrolment Officer will add
+            an extra day to the course. PAE is closed over the Christmas and New
+            Year period{" "}
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.gov.uk/bank-holidays"
+            >
+              ( please click here for UK bank holidays).
+            </a>{" "}
+            Tuition fees are not payable for this period.
           </p>
         </div>
         <div className="data-detailCont">

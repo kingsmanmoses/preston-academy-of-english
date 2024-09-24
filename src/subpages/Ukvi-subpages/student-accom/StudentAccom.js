@@ -90,6 +90,7 @@ const StudentAccom = () => {
               Please note that you will be expected to keep your own rooms,
               bathrooms and common areas clean.
             </h4>
+            <h4>£160 per week + £250 damage deposit</h4>
           </div>
           <div className="accom-boldDetailCont">
             <a
