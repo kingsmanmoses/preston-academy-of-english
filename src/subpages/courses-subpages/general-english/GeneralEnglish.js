@@ -29,9 +29,7 @@ const GeneralEnglish = () => {
             </p>
             <ul className="general-listBox">
               <li className="general-listText">Classroom materials.</li>
-              <li className="general-listText">
-                Course book including online practice
-              </li>
+
               <li className="general-listText">University entrance advice.</li>
               <li className="general-listText">
                 Academic support including extra learning information if

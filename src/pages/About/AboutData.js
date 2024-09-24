@@ -3,12 +3,18 @@ import daniel from "../../assets/img/daniel.png";
 import Abdullah from "../../assets/img/Abdullah.png";
 import Andrew from "../../assets/img/andrew.png";
 import Ayesha from "../../assets/img/Ayesha.jpg";
+import James from "../../assets/img/James Hall.png";
 
 const teamData = [
   {
     img: Abdullah,
     teamTitle: "Principal",
     teamName: "Abdullah Nakhuda",
+  },
+  {
+    img: James,
+    teamTitle: "Administration",
+    teamName: "James Hall",
   },
   {
     img: daniel,
