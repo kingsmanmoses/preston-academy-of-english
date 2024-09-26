@@ -14,7 +14,7 @@ const Services = () => {
           <img src={General} alt="" />
           <h3 className="">General English Courses</h3>
           <p className="">
-            Our qualified and experienced teachers and staff  help students to
+            Our qualified teachers and experienced staff  help students to
             prepare for social English, career improvement and education.
             Students will work on all four main language skills of reading,
             writing, listening and speaking along with grammar, pronunciation
