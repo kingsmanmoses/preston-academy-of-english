@@ -82,10 +82,10 @@ export const AboutData = [
           <h2>Facilities</h2>
           <p>
             Preston Academy of English maintains 4 networked classrooms. Our
-            experienced, qualified teachers benefit from, well-stocked resources
-            with up-to-date books, online resources and CDs. Facilities for
-            students include a computer aided learning room; tea, coffee as well
-            as internet access.
+            qualified teachers benefit from, well-stocked resources with
+            up-to-date books, online resources and CDs. Facilities for students
+            include a computer aided learning room; tea, coffee as well as
+            internet access.
           </p>
         </div>
       </div>
