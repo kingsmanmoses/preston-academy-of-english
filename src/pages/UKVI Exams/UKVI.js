@@ -31,8 +31,8 @@ const UKVI = () => {
               </NavLink>
               <NavLink
                 to="/ukvi-form"
-                target="_blank"
-                rel="noreferrer"
+                // target="_blank"
+                // rel="noreferrer"
                 className="blue-testBtn"
               >
                 Book Test
