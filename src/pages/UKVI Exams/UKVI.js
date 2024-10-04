@@ -29,14 +29,14 @@ const UKVI = () => {
               <NavLink className="red-testBtn" to="a1-test">
                 Learn More
               </NavLink>
-              <a
-                href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAZAAIUVdxpUQ0hGRFFFR1FUUTJIOFpYOTlNNzZYRUlRMi4u"
+              <NavLink
+                to="/ukvi-form"
                 target="_blank"
                 rel="noreferrer"
                 className="blue-testBtn"
               >
                 Book Test
-              </a>
+              </NavLink>
             </div>
           </div>
 

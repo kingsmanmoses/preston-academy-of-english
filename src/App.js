@@ -22,6 +22,7 @@ import B1_B2 from "./components/resuseable_ui/ukvi_examsPage/B1_B2";
 import C1_C2 from "./components/resuseable_ui/ukvi_examsPage/C1_C2";
 import TawkTo from "./components/chatwidget/TawkTo";
 import PriceList from "./subpages/Ukvi-subpages/price-list/PriceList";
+import UKVIForm from "./components/resuseable_ui/ukviformsapply/ukvi-form/UKVIForm";
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
           <Route path="/student-accommodation" element={<StudentAccom />} />
           <Route path="/apply-now" element={<ApplyStud />} />
           <Route path="/price-list" element={<PriceList />} />
+          <Route path="/ukvi-form" element={<UKVIForm />} />
         </Routes>
       </Router>
     </>
