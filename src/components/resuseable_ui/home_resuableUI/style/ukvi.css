@@ -22,7 +22,9 @@
   height: max-content;
   width: 300px;
   border: 1px solid #000;
+  z-index: 999;
   padding: 80px 20px;
+  color: #000;
 }
 .ukvi-btn {
   background: var(--blue-color);

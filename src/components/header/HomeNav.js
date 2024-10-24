@@ -15,6 +15,8 @@ import DropDown from "../resuseable_ui/DropDown/DropDown";
 // import UkviMenuDropDown from "../resuseable_ui/ukvi-examsDropdown/UkviMenuDropDown";
 import UkviModal from "../ukviModal/UkviModal";
 import { IoIosSchool } from "react-icons/io";
+// import LanguageSelector from "../languageSelector/LanguageSelector";
+// import i18n from "../languageSelector/i18n";
 
 const HomeNav = () => {
   //!for the modal pop up
@@ -146,16 +148,18 @@ const HomeNav = () => {
             />
           </ul>
         </div>
+        <div>
+          {/* //* For the btn */}
+          <NavLink to="/apply-now" className="menu-btn">
+            Apply Now
+          </NavLink>
 
-        {/* //* For the btn */}
-        <NavLink to="/apply-now" className="menu-btn">
-          Apply Now
-        </NavLink>
+          {/* <LanguageSelector /> */}
+          <IoApps className="nav-toggle" onClick={() => ShowMenu(!Toggle)} />
 
-        <IoApps className="nav-toggle" onClick={() => ShowMenu(!Toggle)} />
-
-        {openModal && <ModalNav closeModal={setOpenModal} />}
-        {openUkviModal && <UkviModal closeModal={setopenUkviModal} />}
+          {openModal && <ModalNav closeModal={setOpenModal} />}
+          {openUkviModal && <UkviModal closeModal={setopenUkviModal} />}
+        </div>
       </div>
     </>
   );

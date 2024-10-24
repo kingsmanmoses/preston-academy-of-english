@@ -7,8 +7,10 @@ import {
 import { FaXTwitter } from "react-icons/fa6";
 import "./home.css";
 import { NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
+  const { t } = useTranslation();
   useEffect(() => {
     document.title = "Preston Academy of English";
   }, []);
@@ -24,7 +26,7 @@ const Home = () => {
             <span className="red-head">Preston</span>
           </h1>
           <h1>to</h1>
-          <p className="red-head">live, work and study</p>
+          <p className="red-head">{t("Live_p")}</p>
         </div>
         <div className="hero-social">
           <a

@@ -87,6 +87,7 @@ const Header = () => {
                 <p className="menu-para">UKVI Exams</p>
               </li>
             </Link>
+
             {/* 
             <Link
               to="/ukvi"
@@ -139,13 +140,15 @@ const Header = () => {
         </div>
 
         {/* //* For the btn */}
-        <NavLink to="/apply-now" className="menu-btn">
-          Apply Now
-        </NavLink>
+        <div>
+          <NavLink to="/apply-now" className="menu-btn">
+            Apply Now
+          </NavLink>
 
-        <IoApps className="nav-toggle" onClick={() => ShowMenu(!Toggle)} />
-        {openModal && <ModalNav closeModal={setOpenModal} />}
-        {openUkviModal && <UkviModal closeModal={setopenUkviModal} />}
+          <IoApps className="nav-toggle" onClick={() => ShowMenu(!Toggle)} />
+          {openModal && <ModalNav closeModal={setOpenModal} />}
+          {openUkviModal && <UkviModal closeModal={setopenUkviModal} />}
+        </div>
       </div>
     </>
   );

@@ -12,8 +12,8 @@ const Offer = () => {
           <img src={TeachingRoom} alt="" className="teach" />
           <h3>Great Teachers</h3>
           <p>
-            Effective and passionate teachers that will help you in any aspect
-            of English, ace your English test and dominate the English world
+            Effective and passionate teachers that will help you in to improve
+            and support you in your English language learning journey.
           </p>
         </div>
         <div className="detail-cont">
